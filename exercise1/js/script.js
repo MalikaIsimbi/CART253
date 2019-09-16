@@ -15,6 +15,11 @@ let squareX;
 let squareY;
 let squareSize = 100;
 
+// The current position and size of the triangle
+let triangleX;
+let triangleY;
+
+
 
 // preload()
 //
@@ -32,6 +37,7 @@ function preload() {
 function setup() {
   // Create our canvas
   createCanvas(500,500);
+  background (172,212,42);
 
   // Start the circle off screen to the bottom left
   // We divide the size by two because we're drawing from the center
@@ -42,6 +48,9 @@ function setup() {
   // We divide the size by two because we're drawing from the center
   squareX = width + squareSize/2;
   squareY = height + squareSize/2;
+//
+ triangleX= -100;
+ triangleY= height;
 
   // We'll draw rectangles from the center
   rectMode(CENTER);
@@ -73,4 +82,8 @@ function draw() {
   fill(0,0,255,10);
   // Display the square
   rect(squareX,squareY,squareSize,squareSize);
+  triangleX += 1;
+
+  // Display the triangle
+  triangle (triangleX, triangleY, triangleX+30, triangleY, triangleX+15, triangleY-150);
 }
