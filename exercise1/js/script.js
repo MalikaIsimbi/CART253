@@ -1,5 +1,5 @@
 // Exercise 1 - Movement
-// Pippin Barr
+// Isimbi Malika Kabagema
 //
 // Starter code for exercise 1.
 // Draws a moving square and circle that intersect
@@ -31,7 +31,7 @@ function preload() {
 
 function setup() {
   // Create our canvas
-  createCanvas(640,640);
+  createCanvas(500,500);
 
   // Start the circle off screen to the bottom left
   // We divide the size by two because we're drawing from the center
