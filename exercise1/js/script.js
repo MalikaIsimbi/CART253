@@ -82,8 +82,11 @@ function draw() {
   fill(0,0,255,10);
   // Display the square
   rect(squareX,squareY,squareSize,squareSize);
+  // Move triangle from left to right
   triangleX += 1;
 
   // Display the triangle
-  triangle (triangleX, triangleY, triangleX+30, triangleY, triangleX+15, triangleY-150);
+  triangle (triangleX, triangleY, triangleX+50, triangleY, triangleX+25, triangleY-300);
+  // Make the triangle purple
+  fill (164,42,212);
 }
