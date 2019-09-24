@@ -10,20 +10,20 @@ A simple dodging game with keyboard controls
 // The position and size of our avatar circle
 let avatarX;
 let avatarY;
-let avatarSize = 50;
+let avatarSize = 100;
 
 // The speed and velocity of our avatar circle
-let avatarSpeed = 10;
-let avatarVX = 0;
-let avatarVY = 0;
+let avatarSpeed = 20;
+let avatarVX = 2;
+let avatarVY = 2;
 
 // The position and size of the enemy circle
 let enemyX;
 let enemyY;
-let enemySize = 50;
+let enemySize = 60;
 
 // The speed and velocity of our enemy circle
-let enemySpeed = 5;
+let enemySpeed = 10;
 let enemyVX = 5;
 
 // How many dodges the player has made
@@ -44,8 +44,8 @@ function setup() {
   enemyX = 0;
   enemyY = random(0,height);
 
-  // No stroke so it looks cleaner
-  noStroke();
+  // A stroke to add glow to the shape
+  noStroke(0);
 }
 
 // draw()
@@ -54,7 +54,16 @@ function setup() {
 // game over situations.
 function draw() {
   // A yellow background
-  background(252,186,3);
+  background(255,188,3);
+
+  // The name of the game (Artful Dodger)
+  textFont ("Pacifico");
+  text ("The Artful Dodger");
+  textAlign ("Left");
+  textSize (50);
+  fill (145,16,16);
+
+
 
   // Default the avatar's velocity to 0 in case no key is pressed this frame
   avatarVX = 0;
