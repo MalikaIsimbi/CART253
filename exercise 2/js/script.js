@@ -135,8 +135,8 @@ function draw() {
   // Draw the player as a circle
   ellipse(avatarX,avatarY,avatarSize,avatarSize);
 
-  // The enemy is red
-  fill(255,0,0);
+  // The enemy is purple
+  fill(184,140,209);
   // Draw the enemy as a circle
   ellipse(enemyX,enemyY,enemySize,enemySize);
 
