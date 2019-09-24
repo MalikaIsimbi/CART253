@@ -1,7 +1,7 @@
 /******************************************************
 
 Game - The Artful Dodger
-Pippin Barr
+Isimbi Malika Kabagema
 
 A simple dodging game with keyboard controls
 
@@ -53,8 +53,8 @@ function setup() {
 // Handle moving the avatar and enemy and checking for dodges and
 // game over situations.
 function draw() {
-  // A pink background
-  background(255,220,220);
+  // A yellow background
+  background(252,186,3);
 
   // Default the avatar's velocity to 0 in case no key is pressed this frame
   avatarVX = 0;
