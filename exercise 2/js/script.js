@@ -58,7 +58,7 @@ function draw() {
 
   // The name of the game (Artful Dodger)
   textFont ("Pacifico");
-  text ("The Artful Dodger");
+  text ("Balls dodged");
   textAlign ("Left");
   textSize (50);
   fill (145,16,16);
