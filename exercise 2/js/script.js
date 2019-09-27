@@ -56,11 +56,12 @@ function draw() {
   // A yellow background
   background(255,188,3);
 
-  // The name of the game (Artful Dodger)
+  // Balls dodged
   textFont ("Pacifico");
-  text ("Balls dodged");
+  text ("Balls dodged", 0,50);
   textAlign ("Left");
-  textSize (50);
+  textSize (30);
+  text (dodges,30,100);
   fill (145,16,16);
 
 
@@ -134,6 +135,7 @@ function draw() {
     // Reset the enemy's position to the left at a random height
     enemyX = 0;
     enemyY = random(0,height);
+
   }
 
   // Display the number of successful dodges in the console
@@ -146,7 +148,7 @@ function draw() {
 
   // The enemy is purple
   fill(184,140,209);
-  // Draw the enemy as a circle
-  ellipse(enemyX,enemyY,enemySize,enemySize);
+  // Draw the enemy as a triangle
+  triangle (enemyX, enemyY, enemyX + enemyY, enemySize, enemyX +enemyY - enemySize/2 )
 
 }
