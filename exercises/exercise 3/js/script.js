@@ -117,6 +117,11 @@ function setup() {
     imageMode(CORNER);
     image(targetImage,width-200,0);
 
+ // The text "CHIEN PERDU!" to locate the target
+    textSize(20);
+    fill(182,3,252);
+    text('CHIEN PERDU!',width-210,150);
+
 
   // And draw it (because it's the last thing drawn, it will always be on top)
   imageMode(CENTER);
