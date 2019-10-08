@@ -2,12 +2,12 @@
 
 /******************************************************
 
-Game - Chaser
-Pippin Barr
+Area 51
+Isimbi Malika Kabagema
 
-A "simple" game of cat and mouse. The player is a circle and can move with keys,
-if they overlap the (randomly moving) prey they "eat it" by sucking out its life
-and adding it to their own. The player "dies" slowly over time so they have to keep
+A "simple" game of cat and mouse (alien and human). The player is a alien and can move with keys,
+if they overlap the (randomly moving) human they "prey on him/her" by sucking out its life
+and adding it to their own. The alien "dies" slowly over time so they have to keep
 eating to stay alive.
 
 Includes: Physics-based movement, keyboard controls, health/stamina,
